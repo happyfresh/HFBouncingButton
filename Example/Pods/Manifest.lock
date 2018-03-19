@@ -1,0 +1,16 @@
+PODS:
+  - HFBouncingButton (0.1.0)
+
+DEPENDENCIES:
+  - HFBouncingButton (from `../`)
+
+EXTERNAL SOURCES:
+  HFBouncingButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HFBouncingButton: 11a1c4241f632997197b4af696fd7b4f9f67f9f9
+
+PODFILE CHECKSUM: 6d442252a7e2090952715a9b8392680b29843c5b
+
+COCOAPODS: 1.4.0

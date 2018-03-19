@@ -7,17 +7,28 @@
 //
 
 #import "HFViewController.h"
+#import "HFBouncingButton.h"
 
 @interface HFViewController ()
+
+@property (weak, nonatomic) IBOutlet HFBouncingButton *bouncingButton;
 
 @end
 
 @implementation HFViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.bouncingButton.buttonTappedBlock = ^{
+        NSLog(@"tapped");
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Hello" message:@"Be happy be fresh!" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK Cool!" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        [alert addAction:defaultAction];
+        [self showViewController:alert sender:self];
+    };
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning

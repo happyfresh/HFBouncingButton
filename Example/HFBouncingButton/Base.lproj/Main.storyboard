@@ -1,31 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="HFViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                <viewController id="BYZ-38-t0r" customClass="HFViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIf-oG-ZvK" userLabel="RegularBouncing Button" customClass="HFBouncingButton">
+                                <rect key="frame" x="79.5" y="55" width="216" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9P-jU-N0R">
+                                        <rect key="frame" x="0.0" y="0.0" width="216" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.43529411759999997" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Regular Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="bbq-hY-Bf7"/>
+                                    <constraint firstAttribute="height" constant="49" id="mKM-pI-Xeh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="verticalBounce" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqA-2y-kb0" userLabel="Custom" customClass="HFBouncingButton">
+                                <rect key="frame" x="115" y="142" width="144" height="32"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBt-u7-r7N">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="32"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hf_icon_arrow_recommend_white" translatesAutoresizingMaskIntoConstraints="NO" id="Bwy-cF-tOI">
+                                                <rect key="frame" x="32" y="8" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="16" id="9pb-ml-tjb"/>
+                                                    <constraint firstAttribute="height" constant="16" id="ISc-3V-grF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbE-OP-rfT">
+                                                <rect key="frame" x="52" y="8" width="76" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="wbE-OP-rfT" secondAttribute="trailing" constant="16" id="3By-Zr-mib"/>
+                                            <constraint firstItem="wbE-OP-rfT" firstAttribute="centerY" secondItem="KBt-u7-r7N" secondAttribute="centerY" id="52u-20-Nog"/>
+                                            <constraint firstItem="Bwy-cF-tOI" firstAttribute="centerY" secondItem="KBt-u7-r7N" secondAttribute="centerY" id="WuC-tW-Thn"/>
+                                            <constraint firstItem="Bwy-cF-tOI" firstAttribute="leading" secondItem="KBt-u7-r7N" secondAttribute="leading" constant="32" id="hZh-ud-d4j"/>
+                                            <constraint firstItem="wbE-OP-rfT" firstAttribute="leading" secondItem="Bwy-cF-tOI" secondAttribute="trailing" constant="4" id="sQw-Ze-d9l"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KBt-u7-r7N" secondAttribute="trailing" id="SZP-Vm-9up"/>
+                                    <constraint firstAttribute="bottom" secondItem="KBt-u7-r7N" secondAttribute="bottom" id="Tlw-TZ-VZh"/>
+                                    <constraint firstAttribute="height" constant="32" id="XEu-9o-T65"/>
+                                    <constraint firstItem="KBt-u7-r7N" firstAttribute="leading" secondItem="DqA-2y-kb0" secondAttribute="leading" id="jSm-tC-ESV"/>
+                                    <constraint firstAttribute="width" constant="144" id="mkU-0V-lcl"/>
+                                    <constraint firstItem="KBt-u7-r7N" firstAttribute="top" secondItem="DqA-2y-kb0" secondAttribute="top" id="zWh-VU-Qcq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="verticalBounce" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYf-uH-m6K" userLabel="RegularBouncing Button" customClass="HFBouncingButton">
+                                <rect key="frame" x="79" y="205" width="216" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozg-L8-JzL">
+                                        <rect key="frame" x="0.0" y="0.0" width="216" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.86274509799999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Horizontal Bouncing">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="MPq-Xl-a1w"/>
+                                    <constraint firstAttribute="width" constant="216" id="TjI-d3-GJS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="verticalBounce" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgQ-oj-onX" userLabel="RegularBouncing Button" customClass="HFBouncingButton">
+                                <rect key="frame" x="79" y="278" width="216" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVe-aG-9cY">
+                                        <rect key="frame" x="0.0" y="0.0" width="216" height="49"/>
+                                        <color key="backgroundColor" red="0.96478995970000003" green="0.90473533159999997" blue="0.34446259890000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="3R1-lw-PI5"/>
+                                    <constraint firstAttribute="bottom" secondItem="KVe-aG-9cY" secondAttribute="bottom" id="5OU-ui-B74"/>
+                                    <constraint firstItem="KVe-aG-9cY" firstAttribute="top" secondItem="hgQ-oj-onX" secondAttribute="top" id="B45-mx-SSi"/>
+                                    <constraint firstItem="KVe-aG-9cY" firstAttribute="leading" secondItem="hgQ-oj-onX" secondAttribute="leading" id="Eld-FB-05W"/>
+                                    <constraint firstAttribute="height" constant="49" id="Tzx-dU-RhL"/>
+                                    <constraint firstAttribute="trailing" secondItem="KVe-aG-9cY" secondAttribute="trailing" id="Uwg-2O-n73"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="verticalBounce" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DqA-2y-kb0" firstAttribute="top" secondItem="GIf-oG-ZvK" secondAttribute="bottom" constant="38" id="JYf-il-Q7c"/>
+                            <constraint firstItem="hgQ-oj-onX" firstAttribute="top" secondItem="GYf-uH-m6K" secondAttribute="bottom" constant="24" id="Kh3-xo-KF1"/>
+                            <constraint firstItem="GIf-oG-ZvK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="WTf-bX-acJ"/>
+                            <constraint firstItem="DqA-2y-kb0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bMJ-1e-wX6"/>
+                            <constraint firstItem="GYf-uH-m6K" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qcV-Rh-25f"/>
+                            <constraint firstItem="GYf-uH-m6K" firstAttribute="top" secondItem="DqA-2y-kb0" secondAttribute="bottom" constant="31" id="uTl-YD-7BW"/>
+                            <constraint firstItem="hgQ-oj-onX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v2j-7f-APJ"/>
+                            <constraint firstItem="GIf-oG-ZvK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yHU-SU-UvH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bouncingButton" destination="hgQ-oj-onX" id="g0y-VH-HuM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hf_icon_arrow_recommend_white" width="16" height="16"/>
+    </resources>
 </document>

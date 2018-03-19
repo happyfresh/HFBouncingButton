@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HFBouncingButton'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HFBouncingButton.'
+s.summary          = 'HFBouncingButton is simple helper to make bouncing button.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,11 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+HFBouncingButton is simple helper to make bouncing button.
+
+* The view can be customized
+* Bouncing direction can be vertical / horizontal
+* Use block for easy tap action
                        DESC
 
-  s.homepage         = 'https://github.com/Teguh Hidayatullah/HFBouncingButton'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/thidayatullah/HFBouncingButton'
+  # s.screenshots     = 'https://github.com/thidayatullah/HFBouncingButton/blob/master/demo.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Teguh Hidayatullah' => 'thidayatullah90@gmail.com' }
   s.source           = { :git => 'https://github.com/Teguh Hidayatullah/HFBouncingButton.git', :tag => s.version.to_s }

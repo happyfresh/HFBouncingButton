@@ -1,0 +1,6 @@
+framework module HFBouncingButton {
+  umbrella header "HFBouncingButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
