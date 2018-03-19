@@ -1,9 +1,21 @@
 # HFBouncingButton
 
-[![CI Status](http://img.shields.io/travis/Teguh Hidayatullah/HFBouncingButton.svg?style=flat)](https://travis-ci.org/Teguh Hidayatullah/HFBouncingButton)
 [![Version](https://img.shields.io/cocoapods/v/HFBouncingButton.svg?style=flat)](http://cocoapods.org/pods/HFBouncingButton)
 [![License](https://img.shields.io/cocoapods/l/HFBouncingButton.svg?style=flat)](http://cocoapods.org/pods/HFBouncingButton)
 [![Platform](https://img.shields.io/cocoapods/p/HFBouncingButton.svg?style=flat)](http://cocoapods.org/pods/HFBouncingButton)
+
+![alt text][logo]
+
+[logo]: https://github.com/thidayatullah/HFBouncingButton/blob/master/demo.gif "Bouncing Button"
+
+
+
+HFBouncingButton is simple helper to make bouncing button.
+
+* The view can be customized
+* Bouncing direction can be vertical / horizontal
+* Use block for easy tap action
+
 
 ## Example
 

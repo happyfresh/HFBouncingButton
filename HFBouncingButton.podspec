@@ -29,7 +29,7 @@ HFBouncingButton is simple helper to make bouncing button.
   # s.screenshots     = 'https://github.com/thidayatullah/HFBouncingButton/blob/master/demo.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Teguh Hidayatullah' => 'thidayatullah90@gmail.com' }
-  s.source           = { :git => 'https://github.com/Teguh Hidayatullah/HFBouncingButton.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/thidayatullah/HFBouncingButton.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
