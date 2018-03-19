@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HFBouncingButton_Example' do
+  pod 'HFBouncingButton', :path => '../'
+
+  target 'HFBouncingButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
