@@ -59,12 +59,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		688F2C0A6C95467C75725B9F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		688F2C0A6C95467C75725B9F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6D2B85176F81587D84330E18 /* Pods-HFBouncingButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFBouncingButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFBouncingButton_Tests/Pods-HFBouncingButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DF7F52DA788DDC8B3FE48C45 /* HFBouncingButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HFBouncingButton.podspec; path = ../HFBouncingButton.podspec; sourceTree = "<group>"; };
-		E53A74910A973E7E90C2717A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DF7F52DA788DDC8B3FE48C45 /* HFBouncingButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HFBouncingButton.podspec; path = ../HFBouncingButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E53A74910A973E7E90C2717A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E94BE1835F5B86AD9AB0B787 /* Pods_HFBouncingButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFBouncingButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F477490BC74E88EEA42B9A38 /* Pods-HFBouncingButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFBouncingButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFBouncingButton_Example/Pods-HFBouncingButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
